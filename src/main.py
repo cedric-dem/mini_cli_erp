@@ -52,8 +52,6 @@ def show_stock(service):
 
     print(result)
 
-    wait_for_user_exit()
-
 
 def wait_for_user_exit():
     input("Continue ")
@@ -135,6 +133,8 @@ def run_cli():
         elif choice == "5":
             print("Goodbye")
             break
+        wait_for_user_exit()
+
 
 
 run_cli()
